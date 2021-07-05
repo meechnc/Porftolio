@@ -14,7 +14,7 @@ From [SQl Tutorial]..['Covid Deaths$']
 order by 1,2;
 
 -- Looking at Total Cases Vs Total Deaths
--- Shows Likleyhood of dying if you get covid in the states
+-- Shows Likelihood  of dying if you get covid in the states
 Select Location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
 From [SQl Tutorial]..['Covid Deaths$']
 where location like '%states%'
